@@ -13,19 +13,19 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '21756326'))
-API_HASH = environ.get('API_HASH', '7628e009706e06a65a5fd8ad40a87957')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6432495283:AAGeyGr8p6YOEmO2HRsJ1dOe7Mizd8ImJCc")
+API_ID = int(environ.get('API_ID', '28737888'))
+API_HASH = environ.get('API_HASH', 'aa9fc525a5e5a837256c1f0b445af447')
+BOT_TOKEN = environ.get('BOT_TOKEN', "6402552958:AAHmGwC1c7pIl5W96ceYYSViRkuqhHc0uTM")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://graph.org/file/05baa5adad79123db1f9b.jpg')).split() #SAMPLE PIC
-NOR_IMG = environ.get("NOR_IMG", "https://te.legra.ph/file/a27dc8fe434e6b846b0f8.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/kalai_support/14")
-SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
-DPIC = (environ.get("DPIC", "https://graph.org/file/ecaafab708a08e616dbb4.jpg")).split() 
+PICS = (environ.get('PICS', 'https://graph.org/file/47d2a85dfdfb07f3bcfc1.jpg')).split() #SAMPLE PIC
+NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/af3269d68d94706266485.jpg")
+MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/Ak_Entertinments")
+SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/712058bf00dbe36e5c532.jpg")
+DPIC = (environ.get("DPIC", "https://graph.org/file/af3269d68d94706266485.jpg")).split() 
 HPIC = (environ.get("HPIC", "https://graph.org/file/cca952e9407fbb0cfa738.jpg")).split()
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6405612015').split()]
