@@ -1,37 +1,27 @@
 class script(object):
-    START_TXT = """<b>Hᴇʟʟᴏ {},ʙᴜᴅᴅʏ 🌱 ⓂⒾⓃⒶⓉⓄ,【ɪᴀᴍ ʟᴀᴛᴇꜱᴛ ᴀᴅᴠᴀɴᴄᴇᴅ】ᴀɴᴅ ᴘᴏᴡᴇʀꜰᴜʟ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ+└ᴀᴡᴇꜱᴏᴍᴇ ꜰɪʟᴛᴇʀ┘+├ꜰɪʟᴇ ꜱᴛᴏʀᴇ ʙᴏᴛ┤+☞ᴍᴀɴᴜᴀʟ ꜰɪᴛᴇʀ☜ ᴀɴᴅ ᢵᴄᴜꜱᴛᴏᴍɪᴢᴇᴅ ꜱʜᴏʀᴛɴᴇʀ ꜱᴜᴘᴘᴏʀᴛᢴ ᢾᴀɴᴅ ʙᴇꜱᴛ ᴜɪ ᴘᴇʀꜰᴏʀᴍᴀɴᴄᴇᢿ😍
+    START_TXT = """<b>Hᴇʟʟᴏ {},ʙᴜᴅᴅʏ ɪ ᴀᴍ ᴘᴏᴡᴇʀ ғᴜʟʟ Movie Search  ʙᴏᴛ i Have Over 1 Lakh + Movie Files But Not Theatre Prints So Dont Search Theatre Prints 😉 
 
-ʜᴏᴡ ᴛᴏ ᴜꜱᴇ ᴍᴇ 👇
+ᴘᴏᴡᴇʀᴇᴅ ʙʏ🤓 @Ak_Entertainments 
 
-ᴡᴇ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴀᴅꜱ ꜰʀᴇᴇ ᴍᴏᴠɪᴇꜱ ᴊᴜꜱᴛ ᴄʟɪᴄᴋ ᴀᴅꜱ ꜰʀᴇᴇ ᴍᴏᴠɪᴇ ʙᴜᴛᴛᴏɴ
-
-ᴅᴏɴᴇ 🆗</b>"""
-
+    HELP_TXT = """<b>Hᴇʏ {}
+ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
+ 
     ABOUT_TXT = """<b>⍟───[ ᴍʏ ᴅᴇᴛᴀɪʟꜱ ]───⍟
  ‣ ᴍʏ ɴᴀᴍᴇ : ᴍɪɴᴀᴛᴏ ɴᴀᴍɪᴋᴀᴢᴇ
  ‣ ᴍʏ ʙᴇꜱᴛ ꜰʀɪᴇɴᴅ: <a href='tg://settings'>ᴛʜɪs ᴘᴇʀsᴏɴ</a> 
- ‣ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href='http://t.me/Culprit_003'>ᴄᴜʟᴘʀɪᴛ</a> 
- ‣ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a> 
+ ‣ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/Ak_Entertainments_ofcl_bot'>ᴀᴋ ᴇɴᴛᴇʀᴛᴀɪɴᴍᴇɴᴛs</a> 
+ ‣ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org//'>ᴘʏʀᴏɢʀᴀᴍ</a> 
  ‣ ʟᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>ᴘʏᴛʜᴏɴ 3</a> 
  ‣ ᴅᴀᴛᴀ ʙᴀsᴇ : <a href='https://t.me/Ak_Entertainments/'>𝑨𝒌 𝑬𝒏𝒕𝒆𝒓𝒕𝒂𝒊𝒏𝒎𝒆𝒏𝒕𝒔</a> 
- ‣ ʙᴏᴛ sᴇʀᴠᴇʀ : <a href='https://t.me/Ak_Entertainment/'>𝑨𝒌 𝑷𝒗𝒕 𝑳𝒕𝒅🤩</a> 
+ ‣ ʙᴏᴛ sᴇʀᴠᴇʀ : <a href='https://t.me/Ak_Entertainments/'>𝑨𝒌 𝑷𝒗𝒕 𝑳𝒕𝒅🤩</a> 
  ‣ ʙᴜɪʟᴅ sᴛᴀᴛᴜs : ᴠ2.7.1 [sᴛᴀʙʟᴇ]"""
 
     SOURCE_TXT = """
-<b> ᴡᴏᴡ ɪ ʀᴇᴀʟʟʏ ꜰᴇᴇʟ ʏᴏᴜʀ ʟᴏᴠᴇ ! ʙᴜᴅᴅʏ🌱.
+<b> ᴛʜɪs ʙᴏᴛ ɪs ғʀᴇᴇ ғᴏʀ ʏᴏᴜ ʙᴜᴛ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ sʜᴀʀᴇ ᴛʜɪs ᴛᴏ ʏᴏᴜʀ ғʀɪᴇɴᴅs ᴀɴᴅ ғᴀᴍɪʟʏ ᴍᴇᴍʙᴇʀs ᴀɴᴅ ᴀʟsᴏ ᴀᴅᴅ ᴏᴜʀ ʙᴏᴛ ɪɴ ʏᴏᴜʀs ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ᴀs ᴀᴅᴍɪɴ
 
-ᴄᴏᴜʟᴅ ʏᴏᴜ ᴊᴜꜱᴛ ꜰᴜᴇʟ ᴍᴇ ᴜᴘ ᴀɴᴅ ꜱᴜᴘᴘᴏʀᴛ ᴍʏ ꜱᴇʀᴠᴇʀ ᴄᴏꜱᴛ 🔥🙂
+𝗖𝗹𝗶𝗰𝗸 𝗛𝗲𝗿𝗲 𝗧𝗼 𝗔𝗱𝗱 : <a href='http://telegram.me/Ak_Entertainments_Files_Bot?startgroup=true'>ᴀᴋ ᴇɴᴛᴇʀᴛᴀɪɴᴍᴇɴᴛs ғɪʟᴇs ʙᴏᴛ</a> 
 
-ᴀɴʏ ᴀᴍᴏᴜᴛ ᴍᴀᴋᴇꜱ ᴀ ʜᴜɢᴇ ᴅɪꜰꜰᴇʀᴇɴᴄᴇ🤜
-
-‣ ‣ᴜᴘɪ ɪᴅ : kalaiyarasanknp007-1@okicici
-
-‣ᴄᴏɴᴛᴀᴄᴛ ᴅᴇᴠ : <a href='http://t.me/Culprit_003'>ᴄᴜʟᴘʀɪᴛ</a> 
-
-         » Qʀ ᴄᴏᴅᴇ ᴀʟꜱᴏ ᴀᴠᴀɪʟᴀʙᴇ ɪɴ ᴀʙᴏᴠᴇ ɪᴍᴀɢᴇ «
-
-                    ᴛʜᴀɴᴋɪɴɢ ʏᴏᴜ !
-"""
+     ᴛʜᴀɴᴋɪɴɢ ʏᴏᴜ 🤓"""
 
 
 
@@ -54,7 +44,7 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 2. ᴛʜɪꜱ ʙᴏᴛ ꜱᴜᴘᴘᴏʀᴛꜱ ʙᴜᴛᴛᴏɴꜱ ᴡɪᴛʜ ᴀɴʏ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ ᴛʏᴘᴇ.
 3. ʙᴜᴛᴛᴏɴꜱ ꜱʜᴏᴜʟᴅ ʙᴇ ᴘʀᴏᴘᴇʀʟʏ ᴘᴀʀꜱᴇᴅ ᴀꜱ ᴍᴀʀᴋᴅᴏᴡɴ ꜰᴏʀᴍᴀᴛ
 <b>ᴜʀʟ ʙᴜᴛᴛᴏɴꜱ:</b>
-<code>[Button Text](buttonurl:https://t.me/TeamHMT_Bots)</code>
+<code>[Button Text](buttonurl:https://t.me/Ak_Entertinments)</code>
 <b>ᴀʟᴇʀᴛ ʙᴜᴛᴛᴏɴꜱ:</b>
 <code>[Button Text](buttonalert:ᴛʜɪꜱ ɪꜱ ᴀɴ ᴀʟᴇʀᴛ ᴍᴇꜱꜱᴀɢᴇ)</code>"""
 
@@ -83,9 +73,9 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
     EXTRAMOD_TXT = """ʜᴇʟᴘ: Exᴛʀᴀ Mᴏᴅᴜʟᴇs
 <b>ɴᴏᴛᴇ:</b>
 my features Stay here new features coming soon...  
- <b>✯ Maintained by : <a href=http://t.me/Culprit_003>🥷</a></b>
+ <b>✯ Maintained by : <a href=http://t.me/Ak_Entertainments_ofcl_bot>🥷</a></b>
   
- <b>✯ Join here : <a href=https://t.me/new_tamil_movies_hd_1>UPDATES</a></b> 
+ <b>✯ Join here : <a href=https://t.me/@k_Entertinments>UPDATES</a></b> 
   
  ./id - <code>ɢᴇᴛ ɪᴅ ᴏꜰ ᴀ ꜱᴘᴇᴄɪꜰɪᴇᴅ ᴜꜱᴇʀ.</ 
  code> 
@@ -176,38 +166,30 @@ Nᴀᴍᴇ - {}"""
     MELCOW_ENG = """<b>Hᴇʟʟᴏ {} 😍, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} Gʀᴏᴜᴘ ❤️</b>"""
 
     SHORTLINK_INFO = """
-<b>──────「 ᴊᴏɪɴ ᴀ ᴘʀɪᴍᴇ ᴍᴇᴍʙᴇʀ ᴛᴏ ɢᴇᴛ ᴍᴏᴠɪᴇꜱ ᴀᴅꜱ ꜰʀᴇᴇ 」──────
+<b>😎 ᴛᴏ ɢᴇᴛ ʟᴀᴛᴇsᴛ & ᴏʟᴅ ᴍᴏᴠɪᴇs ɪɴ ᴀʟʟ ᴀᴠᴀɪʟᴀʙʟᴇ ʟᴀɴɢᴜᴀɢᴇs ᴊᴏɪɴ ᴀʟʟ ᴏᴜʀ ᴄʜᴀɴɴᴇʟs ɴᴏᴡ
 
-ʏᴏᴜʀ ᴛɪᴍᴇ ɪꜱ ᴘʀᴇᴄɪᴏᴜꜱ,
-ꜱᴛᴏᴘ ᴡᴀᴛᴄʜɪɴɢ ᴀᴅꜱ ᴀɴᴅ ᴀᴠᴏɪᴅ ɴᴏɴꜱᴇɴᴄᴇ ꜱɪᴍᴘʟʏ.
+ʏᴏᴜʀ ᴛɪᴍᴇ ɪꜱ ᴘʀᴇᴄɪᴏᴜꜱ
+Ak Entertainments Never Disappoint You.
 
-✅ ᴘʀɪᴍᴇ ᴍᴇᴍʙᴇʀ ᴘʟᴀɴꜱ
+𝗝𝗼𝗶𝗻 𝗻𝗼𝘄 & 𝗦𝗲𝗮𝗿𝗰𝗵 𝗬𝗼𝘂𝗿 𝗙𝗮𝘃𝗼𝘂𝗿𝗶𝘁𝗲 𝗠𝗼𝘃𝗶𝗲𝘀
 
-1 ᴍᴏɴᴛʜ - ₹15
+1 𝗝𝗼𝗶𝗻 𝗻𝗼𝘄 - @Ak_Entertinments
 
-3 ᴍᴏɴᴛʜꜱ - ₹45
+2 𝗝𝗼𝗶𝗻 𝗻𝗼𝘄 - @CultCinemas
 
-6 ᴍᴏɴᴛʜ - ₹90
+3 𝗝𝗼𝗶𝗻 𝗻𝗼𝘄 - @AkDealsforyou
 
-12 ᴍᴏɴᴛʜꜱ - ₹170
+4 𝗝𝗼𝗶𝗻 𝗻𝗼𝘄 - @ViewCinemas
 
-•ᴜᴘɪ ɪᴅ : kalaiyarasanknp007-1@okicici
+5 𝗝𝗼𝗶𝗻 𝗻𝗼𝘄 - @ViewCinemasmkv
 
-•ꜰᴏʀ Qʀ ᴄᴏᴅᴇ : Qʀ ᴄᴏᴅᴇ ɪꜱ ɪɴ ᴛᴏᴘ ɪᴍᴀɢᴇ
+6 𝗝𝗼𝗶𝗻 𝗻𝗼𝘄 - @RareHiddenMovies
 
-ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ʙᴇ ᴀ ᴘʀɪᴍᴇ ᴍᴇᴍʙᴇʀ ? Fᴏʟʟᴏᴡ Tʜᴇsᴇ Sᴛᴇᴘs:-
+7 𝗝𝗼𝗶𝗻 𝗻𝗼𝘄 - @CultOTT
 
-ꜱᴛᴇᴘ 1 :  ɢᴏ ᴛᴏ ᴀɴʏ ᴘᴀʏᴍᴇɴᴛ ᴀᴘᴘ ʟɪᴋᴇ *ɢᴏᴏɢʟᴇ ᴘᴀʏ
-*ᴘᴀʏᴛᴍ, 
-*ᴘʜᴏɴᴇ ᴘᴀʏ.
-
-ꜱᴛᴇᴘ 2 : ꜱᴄᴀɴ ᴛʜᴇ Qʀ ᴄᴏᴅᴇ ᴏʀ ᴜꜱɪɴɢ ᴜᴘɪ ɪᴅ ᴘᴀʏ ᴊᴜꜱᴛ ᴍᴏɴᴇʏ ᴅᴇᴘᴇɴᴅꜱ ᴏɴ ʏᴏᴜʀ ᴘʟᴀɴ.
-
-ꜱᴛᴇᴘ 3 : ꜱᴇɴᴛ ꜱᴄʀᴇᴇɴ ꜱʜᴏᴛ ᴛᴏ <a href=http://t.me/Culprit_003> ᴄᴜʟᴘʀɪᴛ </a>
-ᴏʀ ᴄʟɪᴄᴋ ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ᴛᴏ ꜱᴇɴᴛ ꜱᴄʀᴇᴇɴ ꜱʜᴏᴛ.
-
-
-ᴀɴʏ ᴅᴏᴜʙᴛꜱ ᴏʀ ʜᴏᴡ ᴛᴏ ʙᴇ ᴀ ᴘʀɪᴍᴇ ᴍᴇᴍʙᴇʀ ?  ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ</b>
+ғᴏʀ ǫᴜɪʀᴇs & ᴅᴍᴄᴀ ᴛᴀᴋᴇᴅᴏᴡɴ 
+ 
+ғᴇᴇʟ ғʀᴇᴇ ᴛᴏ ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ🥸 <a href=http://t.me/CultCinemas_ofcl_bot> ᴄᴏɴᴛᴀᴄᴛ </a>  ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ</b>
 """
 
     REQINFO = """
