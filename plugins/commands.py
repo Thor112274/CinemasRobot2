@@ -50,6 +50,7 @@ async def start(client, message):
                     InlineKeyboardButton('ᴀᴅꜱ ꜰʀᴇᴇ ᴍᴏᴠɪᴇ 🎥', callback_data="shortlink_info"),
                     InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url='https://t.me/colletion_movie')
                 ],[
+                    InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
                 ],[
                     InlineKeyboardButton('💰 ᴅᴏɴᴀᴛᴇ 💰', callback_data='source')
@@ -103,6 +104,7 @@ async def start(client, message):
                     InlineKeyboardButton('ᴀᴅꜱ ꜰʀᴇᴇ ᴍᴏᴠɪᴇ 🎥', callback_data="shortlink_info"),
                     InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url='https://t.me/tamilmovies4Krio')
                 ],[
+                    InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
                 ],[
                     InlineKeyboardButton('💰 ᴅᴏɴᴀᴛᴇ 💰', callback_data='source')
