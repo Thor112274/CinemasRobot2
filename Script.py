@@ -7,7 +7,7 @@ class script(object):
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
  
     ABOUT_TXT = """<b>⍟───[ ᴍʏ ᴅᴇᴛᴀɪʟꜱ ]───⍟
- ‣ ᴍʏ ɴᴀᴍᴇ : ᴍɪɴᴀᴛᴏ ɴᴀᴍɪᴋᴀᴢᴇ
+ ‣ ᴍʏ ɴᴀᴍᴇ : ᴀᴋ ᴇɴᴛᴇʀᴛᴀɪɴᴍᴇɴᴛs ғɪʟᴇs ᴮᵒᵗ 🤖
  ‣ ᴍʏ ʙᴇꜱᴛ ꜰʀɪᴇɴᴅ: <a href='tg://settings'>ᴛʜɪs ᴘᴇʀsᴏɴ</a> 
  ‣ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/Ak_Entertainments_ofcl_bot'>ᴀᴋ ᴇɴᴛᴇʀᴛᴀɪɴᴍᴇɴᴛs</a> 
  ‣ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org//'>ᴘʏʀᴏɢʀᴀᴍ</a> 
