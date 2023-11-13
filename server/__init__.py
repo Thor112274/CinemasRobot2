@@ -1,2 +1,2 @@
 
-# I have my dirty mind @LazyDeveloperr & @creatorrio 😎😍
+# I have my dirty mind @LazyDeveloperr & @@Ak_Entertainments_ofcl_bot 😎😍
