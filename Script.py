@@ -3,7 +3,7 @@ class script(object):
 
 ᴘᴏᴡᴇʀᴇᴅ ʙʏ🤓 @Ak_Entertainments 
 
-    HELP_TXT = """<b>Hᴇʏ {}
+  HELP_TXT = """<b>Hᴇʏ {}
  Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
  
     ABOUT_TXT = """<b>⍟───[ ᴍʏ ᴅᴇᴛᴀɪʟꜱ ]───⍟
