@@ -1,9 +1,9 @@
 class script(object):
     START_TXT = """<b>Hᴇʟʟᴏ {},ʙᴜᴅᴅʏ ɪ ᴀᴍ ᴘᴏᴡᴇʀ ғᴜʟʟ Movie Search  ʙᴏᴛ i Have Over 1 Lakh + Movie Files But Not Theatre Prints So Dont Search Theatre Prints 😉 
 
-ᴘᴏᴡᴇʀᴇᴅ ʙʏ🤓 @Ak_Entertainments 
+ᴘᴏᴡᴇʀᴇᴅ ʙʏ🤓 @Ak_Entertainments</b>"""
 
-  HELP_TXT = """<b>Hᴇʏ {}
+   HELP_TXT = """<b>Hᴇʏ {}
  Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
  
     ABOUT_TXT = """<b>⍟───[ ᴍʏ ᴅᴇᴛᴀɪʟꜱ ]───⍟
