@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="[https://telegra.ph/file/efeaec39efb273b2d372a.jpg](https://graph.org/file/47d2a85dfdfb07f3bcfc1.jpg)" alt="AkEntertainmentsbot Logo">
+  <img src="https://graph.org/file/47d2a85dfdfb07f3bcfc1.jpg" alt="AkEntertainmentsbot Logo">
 </p>
 <h1 align="center">
   AkEntertainmentsbot
