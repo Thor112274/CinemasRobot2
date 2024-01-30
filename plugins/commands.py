@@ -68,7 +68,10 @@ async def start(client, message):
             parse_mode=enums.ParseMode.HTML
         )
         return
-
+    fsub_ids = await is_notsubscribed(client, message)
+    logger.info('================================================================')
+    logger.info(fsub_ids)
+    logger.info('================================================================')
     if fsub_ids := await is_notsubscribed(client, message):
         btn = []
         for fid in fsub_ids:
@@ -76,8 +79,8 @@ async def start(client, message):
                 invite_link = await client.create_chat_invite_link(fid)
             except ChatAdminRequired:
                 logger.error(f"Make sure Bot is admin in Forcesub channel {fid}")
-            else:
-                btn.append([InlineKeyboardButton(invite_link.title, url=invite_link.invite_link)])
+                continue
+            btn.append([InlineKeyboardButton(invite_link.title, url=invite_link.invite_link)])
 
         if not btn:
             return
