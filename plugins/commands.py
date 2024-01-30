@@ -73,13 +73,14 @@ async def start(client, message):
         for fid in fsub_ids:
             try:
                 invite_link = await client.create_chat_invite_link(fid)
+                chat_info = await client.get_chat(fid)
             except ChatAdminRequired:
                 logger.error(f"Make sure Bot is admin in Forcesub channel {fid}")
             else:
-                btn.append([[InlineKeyboardButton(invite_link.title, url=invite_link.invite_link)]])
+                btn.append([InlineKeyboardButton(chat_info.title, url=invite_link.invite_link)])
 
-        # if not btn:
-        #     return
+        if not btn:
+            return
 
         # try:
         #     invite_link = await client.create_chat_invite_link(int(AUTH_CHANNEL))
