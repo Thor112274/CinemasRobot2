@@ -69,8 +69,8 @@ async def is_sub(bot: Client, chat_id: int, user_id: int):
     return True
 
 
-async def is_notsubscribed(bot, query):
-    return [cid for cid in AUTH_CHANNEL if not await is_sub(bot, cid, query.from_user.id)]
+async def is_notsubscribed(bot, user_id):
+    return [cid for cid in AUTH_CHANNEL if not await is_sub(bot, cid, user_id)]
     # try:
     #     user = await bot.get_chat_member(AUTH_CHANNEL, query.from_user.id)
     # except UserNotParticipant:

@@ -68,7 +68,7 @@ async def start(client, message):
             parse_mode=enums.ParseMode.HTML
         )
         return
-    if fsub_ids := await is_notsubscribed(client, message):
+    if fsub_ids := await is_notsubscribed(client, message.from_user.id):
         btn = []
         for fid in fsub_ids:
             try:
