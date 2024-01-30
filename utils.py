@@ -59,14 +59,13 @@ class temp(object):
 async def is_sub(bot: Client, chat_id: int, user_id: int):
     try:
         user = await bot.get_chat_member(chat_id, user_id)
-        if user.status == enums.ChatMemberStatus.BANNED:
-            return
     except UserNotParticipant:
         return
     except Exception as e:
         logger.exception(e)
         return
-    return True
+    else:
+        return user.status != enums.ChatMemberStatus.BANNED
 
 
 async def is_notsubscribed(bot, user_id):
