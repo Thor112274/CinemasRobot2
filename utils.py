@@ -81,8 +81,6 @@ async def is_notsubscribed(bot, query):
     #     if user.status != enums.ChatMemberStatus.BANNED:
     #         return True
 
-    return unsub_channel
-
 async def get_poster(query, bulk=False, id=False, file=None):
     if not id:
         # https://t.me/GetTGLink/4183
