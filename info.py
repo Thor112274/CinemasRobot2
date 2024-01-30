@@ -1,6 +1,6 @@
 import re
 from os import environ,getenv
-from Script import script 
+from Script import script
 
 id_pattern = re.compile(r'^.\d+$')
 def is_enabled(value, default):
@@ -25,7 +25,7 @@ PICS = (environ.get('PICS', 'https://graph.org/file/47d2a85dfdfb07f3bcfc1.jpg'))
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/af3269d68d94706266485.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/Ak_Entertinments")
 SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/712058bf00dbe36e5c532.jpg")
-DPIC = (environ.get("DPIC", "https://graph.org/file/af3269d68d94706266485.jpg")).split() 
+DPIC = (environ.get("DPIC", "https://graph.org/file/af3269d68d94706266485.jpg")).split()
 HPIC = (environ.get("HPIC", "https://graph.org/file/cca952e9407fbb0cfa738.jpg")).split()
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1392184089 5602172369 5685802336 5452354891 5798247275').split()]
@@ -35,7 +35,8 @@ AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
 auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP')
-AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
+AUTH_CHANNEL = {int(cid.strip()) for cid in auth_channel.split() if cid.strip() and id_pattern.search(auth_channel)}
+# AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1001659231206')
 reqst_channel = environ.get('REQST_CHANNEL_ID', '-1001659231206')
