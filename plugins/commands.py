@@ -70,16 +70,16 @@ async def start(client, message):
         return
 
     if fsub_ids := await is_notsubscribed(client, message):
-        bts = []
+        btn = []
         for fid in fsub_ids:
             try:
                 invite_link = await client.create_chat_invite_link(fid)
             except ChatAdminRequired:
                 logger.error(f"Make sure Bot is admin in Forcesub channel {fid}")
             else:
-                bts.append([InlineKeyboardButton(invite_link.title, url=invite_link.invite_link)])
+                btn.append([InlineKeyboardButton(invite_link.title, url=invite_link.invite_link)])
 
-        if not bts:
+        if not btn:
             return
 
         # try:
