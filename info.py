@@ -21,11 +21,11 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "6914343570:AAGD6Uj_WSXpPff8-5YOaZPevXAycsj
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://graph.org/file/47d2a85dfdfb07f3bcfc1.jpg')).split() #SAMPLE PIC
-NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/af3269d68d94706266485.jpg")
+PICS = (environ.get('PICS', 'https://graph.org/file/1e2c04f9a46d608b1ca09.jpg')).split() #SAMPLE PIC
+NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/141344845a449103958c9.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/Ak_Entertinments")
-SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/712058bf00dbe36e5c532.jpg")
-DPIC = (environ.get("DPIC", "https://graph.org/file/af3269d68d94706266485.jpg")).split()
+SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/fa9545cf4469e9c17dda6.jpg")
+DPIC = (environ.get("DPIC", "https://graph.org/file/141344845a449103958c9.jpg")).split()
 HPIC = (environ.get("HPIC", "https://graph.org/file/cca952e9407fbb0cfa738.jpg")).split()
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1392184089 5602172369 5685802336 5452354891 5798247275').split()]
