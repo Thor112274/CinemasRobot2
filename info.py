@@ -15,7 +15,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '28737888'))
 API_HASH = environ.get('API_HASH', 'aa9fc525a5e5a837256c1f0b445af447')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6402552958:AAHmGwC1c7pIl5W96ceYYSViRkuqhHc0uTM")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6914343570:AAGD6Uj_WSXpPff8-5YOaZPevXAycsjndJc")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -33,7 +33,7 @@ CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHAN
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
-auth_channel = environ.get('AUTH_CHANNEL', '-1001823217970 -1001976708417')
+auth_channel = environ.get('AUTH_CHANNEL', '-1001659231206 -1001976708417')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = {int(cid.strip()) for cid in auth_channel.split() if cid.strip() and id_pattern.search(cid)}
 # AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
@@ -45,9 +45,9 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://SURYABHAI:SURYABHAI@cluster0.9ykdkdl.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://cultcinemas:cultcinemas@cluster0.xvzi9hw.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Ak_Entertainments_DB')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'ClutCinemas_DB')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
@@ -63,7 +63,7 @@ CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/CultCinemas')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Ak_Entertinments')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'HELLO BUDDY 🌱')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001792880785'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002138046592'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Ak_Entertinments')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
@@ -93,13 +93,13 @@ NO_PORT = bool(environ.get('NO_PORT', False))
 APP_NAME = None
 if 'DYNO' in environ:
     ON_HEROKU = True
-    APP_NAME = environ.get('APP_NAME', 'akentertainments-ff583c0a2394')
+    APP_NAME = environ.get('APP_NAME', 'cultcinemasrobot-6cfdaf5d1549')
 else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
 FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-URL = "https://akentertainments-ff583c0a2394.herokuapp.com/".format(FQDN) if ON_HEROKU or NO_PORT else \
-    "https://akentertainments-ff583c0a2394.herokuapp.com/".format(FQDN, PORT)
+URL = "https://cultcinemasrobot-6cfdaf5d1549.herokuapp.com/".format(FQDN) if ON_HEROKU or NO_PORT else \
+    "https://cultcinemasrobot-6cfdaf5d1549.herokuapp.com/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'LazyBot'))
@@ -114,9 +114,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://akentertainments-ff583c0a2394.herokuapp.com/".format(FQDN)
+    URL = "https://cultcinemasrobot-6cfdaf5d1549.herokuapp.com/".format(FQDN)
 else:
-    URL = "https://akentertainments-ff583c0a2394.herokuapp.com/".format(FQDN)
+    URL = "https://cultcinemasrobot-6cfdaf5d1549.herokuapp.com/".format(FQDN)
 
 
 
