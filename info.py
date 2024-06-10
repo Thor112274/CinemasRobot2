@@ -93,7 +93,7 @@ NO_PORT = bool(environ.get('NO_PORT', False))
 APP_NAME = None
 if 'DYNO' in environ:
     ON_HEROKU = True
-    APP_NAME = environ.get('APP_NAME', 'cultcinemasrobot2-4094332ace3c')
+    APP_NAME = environ.get('APP_NAME', 'cultcinemas-9fd1a25e62ae')
 else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
