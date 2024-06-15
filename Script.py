@@ -1,7 +1,9 @@
 class script(object):
     START_TXT = """<b>Hᴇʟʟᴏ {},ʙᴜᴅᴅʏ ɪ ᴀᴍ ᴘᴏᴡᴇʀ ғᴜʟʟ Movie Search  ʙᴏᴛ i Have Over 1 Lakh + Movie Files But Not Theatre Prints So Dont Search Theatre Prints 😉 
 
-ᴘᴏᴡᴇʀᴇᴅ ʙʏ🤓 @Ak_Entertainments</b>"""
+ᴘᴏᴡᴇʀᴇᴅ ʙʏ🤓 @Ak_Entertainments</b>
+
+<b>How To Use Bot : <a href='https://t.me/How_To_Open_This_Link/98/'>Check Here</a></b>""" """
 
     HELP_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
