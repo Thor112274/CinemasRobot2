@@ -3,7 +3,7 @@ class script(object):
 
 ᴘᴏᴡᴇʀᴇᴅ ʙʏ🤓 @Ak_Entertainments</b>
 
-<b>How To Use Bot : <a href='https://t.me/How_To_Open_This_Link/98/'>Check Here</a></b>""" """
+<b>How To Use Bot : <a href='https://t.me/How_To_Open_This_Link/98/'>Check Here</a></b>"""
 
     HELP_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
