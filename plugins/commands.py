@@ -8,7 +8,7 @@ from pyrogram.errors import ChatAdminRequired, FloodWait
 from pyrogram.types import *
 from database.ia_filterdb import Media, get_file_details, unpack_new_file_id, get_bad_files
 from database.users_chats_db import db
-from info import CHANNELS, ADMINS, AUTH_CHANNEL, LOG_CHANNEL, PICS, HPIC, BATCH_FILE_CAPTION, CUSTOM_FILE_CAPTION, PROTECT_CONTENT, CHNL_LNK, GRP_LNK, REQST_CHANNEL, SUPPORT_CHAT_ID, SUPPORT_CHAT, MAX_B_TN, VERIFY, SHORTLINK_API, SHORTLINK_URL, TUTORIAL, IS_TUTORIAL, PREMIUM_USER
+from info import CHANNELS, ADMINS, AUTH_CHANNELS, LOG_CHANNEL, PICS, HPIC, BATCH_FILE_CAPTION, CUSTOM_FILE_CAPTION, PROTECT_CONTENT, CHNL_LNK, GRP_LNK, REQST_CHANNEL, SUPPORT_CHAT_ID, SUPPORT_CHAT, MAX_B_TN, VERIFY, SHORTLINK_API, SHORTLINK_URL, TUTORIAL, IS_TUTORIAL, PREMIUM_USER
 from utils import get_settings, get_size, is_notsubscribed, save_group_settings, temp, verify_user, check_token, check_verification, get_token, get_shortlink, get_tutorial
 from database.connections_mdb import active_connection
 # from plugins.pm_filter import ENABLE_SHORTLINK
@@ -68,46 +68,50 @@ async def start(client, message):
             parse_mode=enums.ParseMode.HTML
         )
         return
+    from pyrogram.errors import ChatAdminRequired
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+
+# Assuming `AUTH_CHANNELS` is a list of authorized channel IDs
+AUTH_CHANNELS = [-1001234567890, -1009876543210]  # Replace with your actual channel IDs
+
+async def handle_subscription(client, message):
+    # Check if the user is subscribed to all required channels
     if fsub_ids := await is_notsubscribed(client, message.from_user.id):
         btn = []
         for fid in fsub_ids:
             try:
+                # Create invite link for the channel
                 invite_link = await client.create_chat_invite_link(fid)
                 chat_info = await client.get_chat(fid)
             except ChatAdminRequired:
+                # Log error if the bot is not an admin in the channel
                 logger.error(f"Make sure Bot is admin in Forcesub channel {fid}")
             else:
+                # Add button to the list for the user to join the channel
                 btn.append([InlineKeyboardButton(chat_info.title, url=invite_link.invite_link)])
 
         if not btn:
             return
 
-        # try:
-        #     invite_link = await client.create_chat_invite_link(int(AUTH_CHANNEL))
-        # except ChatAdminRequired:
-        #     logger.error("Make sure Bot is admin in Forcesub channel")
-        #     return
-        # btn = [
-        #     [
-        #         InlineKeyboardButton(
-        #             "❆ Jᴏɪɴ Oᴜʀ Cʜᴀɴɴᴇʟ ❆", url=invite_link.invite_link
-        #         )
-        #     ]
-        # ]
-
+        # Append the retry button if the command is not "subscribe"
         if message.command[1] != "subscribe":
             try:
                 kk, file_id = message.command[1].split("_", 1)
                 btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", callback_data=f"checksub#{kk}#{file_id}")])
             except (IndexError, ValueError):
                 btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
+
+        # Send a message to the user prompting them to join the required channels
         await client.send_photo(
             chat_id=message.from_user.id,
             photo="https://graph.org/file/3e4a86d1838c5ced4b92f.jpg",
-            caption="You are not in our list channel given below so you don't get the movie file...\n\nIf you want the movie file, click on the '🍿ᴊᴏɪɴ ᴏᴜʀ ʙᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ🍿' button below and join our back-up channel, then click on the '🔄 Try Again' button below...\n\nThen you will get the movie files...",
+            caption=("You are not in our list channel given below so you don't get the movie file...\n\n"
+                     "If you want the movie file, click on the '🍿ᴊᴏɪɴ ᴏᴜʀ ʙᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ🍿' button below and join our back-up channel, "
+                     "then click on the '🔄 Try Again' button below...\n\nThen you will get the movie files..."),
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
-            )
+        )
+
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
