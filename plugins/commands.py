@@ -72,7 +72,7 @@ async def start(client, message):
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 # Assuming `AUTH_CHANNELS` is a list of authorized channel IDs
-AUTH_CHANNELS = [-1001234567890, -1009876543210]  # Replace with your actual channel IDs
+AUTH_CHANNELS = [-1001622914589,-1001948532295]  # Replace with your actual channel IDs
 
 async def handle_subscription(client, message):
     # Check if the user is subscribed to all required channels
